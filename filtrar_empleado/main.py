@@ -19,4 +19,3 @@ empleados = [
     {"nombre": "Pedro", "departamento": "Marketing", "salario": 25000}
 ]
 
-print (filtrar_it_altos(empleados))            
