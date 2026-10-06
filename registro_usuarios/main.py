@@ -28,3 +28,5 @@ registros_raw = [
 
 registros_limpios = procesar_registros(registros_raw)
 print(registros_limpios)
+
+
