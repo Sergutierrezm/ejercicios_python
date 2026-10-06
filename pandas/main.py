@@ -57,7 +57,7 @@ print(estu_no_jorge_carlos)
 #'Suspenso' si la puntuación es menor a 60.
 
 import numpy as np
-df['estado'] = np.where(df['puntuacion'] >60, 'aprobado', 'suspenso')
+df['estado'] = np.where(df['puntuacion'] >=60, 'aprobado', 'suspenso')
 print(df)
 
 #Encuentra a los estudiantes que tengan una edad entre 19 y 22 años (ambos inclusive) utilizando el método
@@ -69,3 +69,7 @@ print(entre19_22)
 
 df.loc[df['puntuacion'] < 60, 'puntuacion'] += 5
 print(df)
+
+
+#Ordena los estudiantes por puntuación de mayor a menor (sort_values).
+
