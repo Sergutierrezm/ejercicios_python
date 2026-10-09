@@ -67,7 +67,7 @@ print(entre19_22)
 
 #Sube 5 puntos de puntuación exclusivamente a aquellos estudiantes que hayan obtenido una puntuación menor a 60
 
-df.loc[df['puntuacion'] < 60, 'puntuacion'] += 5
+df.loc(df['puntuacion'] < 60), 'puntuacion' += 5
 print(df)
 
 
