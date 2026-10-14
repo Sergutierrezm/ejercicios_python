@@ -7,23 +7,22 @@ def mostrar_menu():
     print("Cargar archivos")
 
 def iniciar_menu():
-    opciones = {
-        "1": cargar_archivos,
-        "2": stock_correcto_valoracionok
-    }
+    
 
     df = None
     while True:
         mostrar_menu()
         opcion = input("Seleccione una opcion").strip()
 
-        if opcion in opciones:
-            resultado = opciones[opcion]()
-            if resultado is not None:
-                df = resultado
+        if opcion == "1":
+            df = cargar_archivos()
+            if df is not None:
+                print("Archivo cargado correctamente")
         elif opcion == "2":
             if df is not None:
-                stock_correcto_valoracionok(df)
+                df_filtrado = stock_correcto_valoracionok(df)
+                print("Registro filtrado")
+                print(df_filtrado)
         elif opcion == "3":
             print("Saliendo del programa")
             break
