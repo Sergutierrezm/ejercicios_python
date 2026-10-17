@@ -4,7 +4,9 @@ from procesador import stock_correcto_valoracionok
 
 def mostrar_menu():
     print("MENU DEL PROGRAMA")
-    print("Cargar archivos")
+    print("1: Cargar archivos")
+    print("2: Filtrar producto")
+    print("3: Salir del programa")
 
 def iniciar_menu():
     
@@ -23,6 +25,8 @@ def iniciar_menu():
                 df_filtrado = stock_correcto_valoracionok(df)
                 print("Registro filtrado")
                 print(df_filtrado)
+            else:
+                print("Primero debes cargar el archivo")
         elif opcion == "3":
             print("Saliendo del programa")
             break
