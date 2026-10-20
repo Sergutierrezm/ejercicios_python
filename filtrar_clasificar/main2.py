@@ -10,4 +10,6 @@ def filtrar_precios_Altos(lista_precios):
             lista.append(x)
     return lista
     
-print(filtrar_precios_Altos(precios))    
+print(filtrar_precios_Altos(precios))
+
+

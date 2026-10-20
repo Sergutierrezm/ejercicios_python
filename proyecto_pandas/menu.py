@@ -9,13 +9,10 @@ def mostrar_menu():
     print("3: Salir del programa")
 
 def iniciar_menu():
-    
-
     df = None
     while True:
         mostrar_menu()
-        opcion = input("Seleccione una opcion").strip()
-
+        opcion = input("Seleccione una opcion: ").strip()
         if opcion == "1":
             df = cargar_archivos()
             if df is not None:
